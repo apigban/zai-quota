@@ -1,0 +1,30 @@
+# Build output and artifacts
+dist/
+bin/
+zai-quota
+coverage.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# Secrets and sensitive files
+.env
+.env.*
+*.pem
+*.key
+*.cert
+*.rsa
+*id_rsa*
+*.credential
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Temporary files
+tmp/
+*.log
