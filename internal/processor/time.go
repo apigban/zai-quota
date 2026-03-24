@@ -34,12 +34,15 @@ func FormatTimeUntil(t time.Time) string {
 
 func FormatResetDateTime(t time.Time) string {
 	iana, found := GetTimezone()
-	_, offsetSeconds := t.Zone()
+	name, offsetSeconds := t.Zone()
 
 	dateStr := t.Format("Jan 2, 15:04")
 
 	if !found {
-		return dateStr + " UTC"
+		if name == "" {
+			name = "UTC"
+		}
+		return fmt.Sprintf("%s %s %s", dateStr, FormatTimezoneOffset(offsetSeconds), name)
 	}
 
 	offset := FormatTimezoneOffset(offsetSeconds)
