@@ -23,7 +23,7 @@ A terminal-based interactive dashboard for monitoring your Z.ai API quotas. Desi
 ## Quick Start
 
 ### 1. Get the binary
-Download the latest version for your system from the [Releases](https://github.com/apigban/z.ai-coding-plan-usage-metrics/releases) page.
+Download the latest version for your system from the [Releases](https://github.com/apigban/zai-quota/releases) page.
 
 ### 2. Make it executable (Linux/macOS)
 ```bash
@@ -43,7 +43,7 @@ zai-quota
 ## Setup & Configuration
 
 ### Getting your API Key
-1. Log in to your [Z.ai Dashboard](https://api.z.ai).
+1. Log in to your [Z.ai Dashboard](https://z.ai/manage-apikey/apikey-list).
 2. Navigate to **API Settings**.
 3. Copy your **API Key**.
 
